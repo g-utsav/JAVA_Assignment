@@ -47,7 +47,7 @@ public class Student {
 			System.out.println("Enter valid marks int the range 0 to 500");
 		}
 	}
-	public int gerMarks() {
+	public int getMarks() {
 		return marks;
 	}
 
