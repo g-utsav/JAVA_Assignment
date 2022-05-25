@@ -29,17 +29,12 @@ public class Demo {
 		Demo.name = sc.nextLine();
 		
 		System.out.println("Enter the Address(String) : ");
-//		sc.nextLine();
 		Demo.address = sc.nextLine();
 		
 		if(!flag) {
 			System.out.println("Enter College Name(String) : ");
-//			sc.nextLine();
 			Demo.collageName = sc.nextLine();;
 		}
-		
-		sc.close();
-		
 	}
 	
 	static void getDetails(Student std) {

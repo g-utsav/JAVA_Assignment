@@ -20,15 +20,12 @@ public class Student {
 		return collageName;
 	}
 	
-	public Student() {
-		
-	}
+	public Student() { }
+	
 	public Student(int roll, String name, String address, String collageName) {
 		this.roll = roll;
 		this.name = name;
 		this.address = address;
 		this.collageName = collageName;
 	}
-
-	
 }
