@@ -9,12 +9,16 @@ public class AccountDemo {
 		System.out.println("Enter the amount to Withdraw : ");
 		
 		try {
+			
 			double amount = sc.nextDouble();
 			System.out.println("The Balance left in account " +account.withdraw(amount));
+			
 		}catch(InsufficientFundsException ife) {
 			System.out.println(ife.getMessage());
+			
 		}catch(Exception e) {
 			System.out.println(e);
+			
 		}
 		finally {
 			System.out.println("ThankYou");
@@ -22,16 +26,20 @@ public class AccountDemo {
 	}
 	
 	static void deposit(Account account, Scanner sc) {
-		System.out.println("Enter the mount to Deposit : ");
+		System.out.println("Enter the amount to Deposit : ");
 		
 		
 		try {
+			
 			double amount = sc.nextDouble();
 			account.deposit(amount);
+			
 		}catch(InvalidFundInputException ifie) {
 			System.out.println(ifie.getMessage());
+			
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println(e);
+			
 		}finally {
 			System.out.println("ThankYou");
 		}
